@@ -1,0 +1,10 @@
+header {
+    display: flex;
+    height: 160px;
+    background-color: black;
+    color: white;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
