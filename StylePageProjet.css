@@ -1,6 +1,7 @@
 header {
+    position: fixed;
     display: flex;
-    width:100%;
+    width: 100%;
     height: 40px;
     background-color: black;
     color: white;
@@ -10,15 +11,23 @@ header {
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
     justify-content: space-evenly;
+    z-index: 999;
 }
-body{
+
+body {
     margin: 0;
 }
-.imageFond{
+
+.imageFond {
+    z-index: 0;
+    position: fixed;
     overflow: hidden;
+    height: 100%;
     width: 100%;
+    object-fit: cover;
 }
-.box1{
+
+.box1 {
     display: flex;
     border: 1px white solid;
     height: 30px;
@@ -28,7 +37,8 @@ body{
     justify-content: center;
     align-items: center;
 }
-.box2{
+
+.box2 {
     display: flex;
     border: 1px white solid;
     height: 30px;
@@ -38,7 +48,8 @@ body{
     align-items: center;
     font-style: normal;
 }
-.box3{
+
+.box3 {
     display: flex;
     border: 1px white solid;
     height: 30px;
@@ -48,7 +59,8 @@ body{
     align-items: center;
     font-style: normal;
 }
-.box4{
+
+.box4 {
     display: flex;
     border: 1px white solid;
     height: 30px;
@@ -57,4 +69,41 @@ body{
     justify-content: center;
     align-items: center;
     font-style: normal;
+}
+
+.ombreImage {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.205), rgb(0, 0, 0));
+    align-items: flex-end;
+    display: flex;
+}
+
+.Actualités {
+    position: absolute;
+    left: 60px;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.Actualités p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 100px;
+    font-size: 70px;
+    height: 100px;
+    margin: 0;   
+}
+
+.Actualités hr {
+    width: 450px;;
+    color: white;
+    background-color: white;
+    height: 3px;
+}
+.newsSect{
+    width: 100%;
+    height: 600px;
 }
