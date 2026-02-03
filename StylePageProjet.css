@@ -13,20 +13,25 @@ header {
     justify-content: space-evenly;
     z-index: 999;
 }
-header a:link, a:visited{
+
+header a:link,
+a:visited {
     color: white;
     text-decoration: none;
     cursor: pointer;
 }
-header a:link:active, a:visited:active{
-    color:white;
+
+header a:link:active,
+a:visited:active {
+    color: white;
     text-decoration: none;
     cursor: pointer;
 }
-.button{
+
+.button {
     border: 1px white solid;
     background-color: red;
-    padding:3px 3px;
+    padding: 3px 3px;
 
 }
 
@@ -47,8 +52,8 @@ body {
     z-index: 0;
     position: fixed;
     overflow: hidden;
-    height: 90%;
     width: 100%;
+    height: 100vh;
     object-fit: cover;
 }
 
@@ -61,51 +66,9 @@ body {
     object-fit: cover;
 }
 
-.box1 {
-    display: flex;
-    border: 1px white solid;
-    height: 30px;
-    width: 65px;
-    background-color: red;
-    font-style: normal;
-    justify-content: center;
-    align-items: center;
-}
-
-.box2 {
-    display: flex;
-    border: 1px white solid;
-    height: 30px;
-    width: 80px;
-    background-color: red;
-    justify-content: center;
-    align-items: center;
-    font-style: normal;
-}
-
-.box3 {
-    display: flex;
-    border: 1px white solid;
-    height: 30px;
-    width: 78px;
-    background-color: red;
-    justify-content: center;
-    align-items: center;
-    font-style: normal;
-}
-
-.box4 {
-    display: flex;
-    border: 1px white solid;
-    height: 30px;
-    width: 60px;
-    background-color: red;
-    justify-content: center;
-    align-items: center;
-    font-style: normal;
-}
 
 .ombreVideo {
+    top: 0;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -163,9 +126,7 @@ body {
     display: flex;
     position: relative;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: xx-large;
-    font-weight: bolder;
+
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -173,12 +134,15 @@ body {
 }
 
 .sponsorsF1 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
     padding: 20px 5%;
     width: 100%;
 }
 
 .sponsorsF1 a {
-    padding: 3% 2%;
+    padding: 2% 2%;
 }
 
 .sponsorsF1Part2 {
@@ -192,8 +156,7 @@ body {
     background-color: #303037;
 }
 
-.sponsorsF1Part2 img {
-    background-color: green;
+.sponsorsF1Part2 a {
     padding: 2% 2%;
 }
 
@@ -208,6 +171,6 @@ body {
     background-color: #47464c;
 }
 
-.sponsorsF1Part3 img {
+.sponsorsF1Part3 a {
     padding: 2% 2%;
 }
