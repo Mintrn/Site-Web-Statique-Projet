@@ -1,18 +1,187 @@
-.Ecuries{
+.Ecuries {
     position: relative;
     width: 100%;
-    height: 300vh;
     background-color: white;
+
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 50px;
+
+    margin-top: 4%;
+    padding: 2% 5%;
+    box-sizing: border-box;
 }
 
-.Alpine{
-    width: 500px;
+.Voiture {
+    display: flex;
+    width: 100%;
     height: 300px;
-    background-color: #1c4f80;
+    background-color: #000000;
     border-radius: 15px;
-    margin: 2%;
-    margin-top: 10%;
-    
+}
+
+.AlpineCar {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    background-color: #115080;
+    border-radius: 15px;
+    background-image: linear-gradient(288deg, rgba(0, 85, 255, 1) 1.5%, rgba(4, 56, 115, 1) 91.6%);
+}
+
+.AstonMartinCar {
+    background-image: linear-gradient(288deg, rgba(15, 138, 99, 1) 1.5%, rgba(8, 72, 45, 1) 91.6%);
+    display: flex;
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.AudiCar {
+    background-image: linear-gradient(288deg, rgba(247, 28, 75, 1) 1.5%, rgba(150, 12, 40, 1) 91.6%);
+    display: flex;
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.CadillacCar {
+    background-image:
+        linear-gradient(288deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0)),
+        linear-gradient(288deg, rgba(60, 60, 60, 1) 1.5%, rgba(8, 8, 10, 1) 91.6%);
+    display: flex;
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.FerrariCar {
+    background-image: radial-gradient(circle farthest-corner at 17.1% 22.8%, rgba(226, 24, 24, 1) 0%, rgba(160, 6, 6, 1) 90%);
+    display: flex;
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.HaasCar {
+    background-image: linear-gradient(135deg, rgba(235, 10, 30, 1) 1.5%, rgba(0, 0, 0, 1) 91.6%);
+    display: flex;
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.MclarenCar{
+        background-image: linear-gradient(135deg, 	#FF8000 1.5%, #000000 91.6%);
+        display: flex;
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+
+}
+
+.Voiture p,
+.AlpineCar p,
+.AstonMartinCar p,
+.AudiCar p,
+.CadillacCar p,
+.FerrariCar p,
+.HaasCar p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    color: white;
+    margin-left: 5vh;
+}
+
+.Pilote1,
+.Pilote2 {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    background-color: #000000;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.AlpinePilote1,
+.AlpinePilote2 {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    background-color: #115080;
+    border-radius: 15px;
+    align-items: center;
+    background-image: linear-gradient(288deg, rgba(0, 85, 255, 1) 1.5%, rgba(4, 56, 115, 1) 91.6%);
+}
+
+.AstonMartinPilote1,
+.AstonMartinPilote2 {
+    background-image: linear-gradient(288deg, rgba(15, 138, 99, 1) 1.5%, rgba(8, 72, 45, 1) 91.6%);
+    display: flex;
+    width: 100%;
+    height: 300px;
+    background-color: #115080;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.AudiPilote1,
+.AudiPilote2 {
+    background-image: linear-gradient(288deg, rgba(247, 28, 75, 1) 1.5%, rgba(150, 12, 40, 1) 91.6%);
+    display: flex;
+    width: 100%;
+    height: 300px;
+    background-color: #115080;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.CadillacPilote1,
+.CadillacPilote2 {
+    background-image:
+        linear-gradient(288deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0)),
+        linear-gradient(288deg, rgba(60, 60, 60, 1) 1.5%, rgba(8, 8, 10, 1) 91.6%);
+    display: flex;
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.FerrariPilote1,
+.FerrariPilote2 {
+    background-image: radial-gradient(circle farthest-corner at 17.1% 22.8%, rgba(226, 24, 24, 1) 0%, rgba(160, 6, 6, 1) 90%);
+    display: flex;
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.HaasPilote1,
+.HaasPilote2 {
+    background-image: linear-gradient(135deg, rgba(235, 10, 30, 1) 1.5%, rgba(0, 0, 0, 1) 91.6%);
+    display: flex;
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.Pilote1 p,
+.Pilote2 p,
+.AlpinePilote1 p,
+.AlpinePilote2 p,
+.AstonMartinPilote1 p,
+.AstonMartinPilote2 p,
+.AudiPilote1 p,
+.AudiPilote2 p,
+.CadillacPilote1 p,
+.CadillacPilote2 p,
+.FerrariPilote1 p,
+.FerrariPilote2 p, .HaasPilote1 p, .HaasPilote2 p {
+    align-self: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: large;
+    margin-left: 5vh;
 }
