@@ -12,14 +12,6 @@
     box-sizing: border-box;
 }
 
-.Voiture {
-    display: flex;
-    width: 100%;
-    height: 300px;
-    background-color: #000000;
-    border-radius: 15px;
-}
-
 .AlpineCar {
     display: flex;
     width: 100%;
@@ -71,13 +63,46 @@
     border-radius: 15px;
 }
 
-.MclarenCar{
-        background-image: linear-gradient(135deg, 	#FF8000 1.5%, #000000 91.6%);
-        display: flex;
+.MclarenCar {
+    background-image: linear-gradient(135deg, #FF8000 1.5%, #000000 91.6%);
+    display: flex;
     width: 100%;
     height: 300px;
     border-radius: 15px;
 
+}
+
+.MercedesCar {
+    background-image: linear-gradient(135deg, #00A19B 1.5%, #C8CCCE 91.6%);
+    display: flex;
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+
+}
+
+.RacingBullsCar {
+    background-image: linear-gradient(165deg, #3143a9 35.5%, #dddddd 91.6%);
+    display: flex;
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.RedBullCar {
+    background-image: linear-gradient(135deg, #00174C 1.5%, #003773 91.6%);
+    display: flex;
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.WilliamsCar {
+    background-image: linear-gradient(135deg, #00A3E0 1.5%, #041E42 91.6%);
+    display: flex;
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
 }
 
 .Voiture p,
@@ -86,21 +111,16 @@
 .AudiCar p,
 .CadillacCar p,
 .FerrariCar p,
-.HaasCar p {
+.HaasCar p,
+.MclarenCar p,
+.MercedesCar p,
+.RacingBullsCar p,
+.RedBullCar p,
+.WilliamsCar p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: xx-large;
     color: white;
-    margin-left: 5vh;
-}
-
-.Pilote1,
-.Pilote2 {
-    display: flex;
-    width: 100%;
-    height: 300px;
-    background-color: #000000;
-    border-radius: 15px;
-    align-items: center;
+    margin-left: 5%;
 }
 
 .AlpinePilote1,
@@ -167,6 +187,51 @@
     border-radius: 15px;
 }
 
+.MclarenPilote1,
+.MclarenPilote2 {
+    background-image: linear-gradient(135deg, #FF8000 1.5%, #000000 91.6%);
+    display: flex;
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.MercedesPilote1,
+.MercedesPilote2 {
+    background-image: linear-gradient(135deg, #00A19B 1.5%, #C8CCCE 91.6%);
+    display: flex;
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.RacingBullsPilote1,
+.RacingBullsPilote2 {
+    background-image: linear-gradient(165deg, #3143a9 35.5%, #dddddd 91.6%);
+    display: flex;
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.RedBullPilote1,
+.RedBullPilote2 {
+    background-image: linear-gradient(135deg, #00174C 16%, #003773 80.6%);
+    display: flex;
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.WilliamsPilote1,
+.WilliamsPilote2 {
+    background-image: linear-gradient(135deg, #00A3E0 1.5%, #041E42 91.6%);
+    display: flex;
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+}
+
 .Pilote1 p,
 .Pilote2 p,
 .AlpinePilote1 p,
@@ -178,10 +243,20 @@
 .CadillacPilote1 p,
 .CadillacPilote2 p,
 .FerrariPilote1 p,
-.FerrariPilote2 p, .HaasPilote1 p, .HaasPilote2 p {
+.FerrariPilote2 p,
+.HaasPilote1 p,
+.HaasPilote2 p,
+.MclarenPilote1 p,
+.MclarenPilote2 p,
+.MercedesPilote1 p,
+.MercedesPilote2 p,
+.RacingBullsPilote1 p,
+.RacingBullsPilote2 p,
+.RedBullPilote1 p,
+.RedBullPilote2 p, .WilliamsPilote1 p, .WilliamsPilote2 p {
     align-self: flex-start;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-size: large;
-    margin-left: 5vh;
+    margin-left: 5%;
 }
