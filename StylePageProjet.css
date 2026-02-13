@@ -28,11 +28,8 @@ a:visited:active {
     cursor: pointer;
 }
 
-.button {
-    border: 1px white solid;
-    background-color: red;
-    padding: 3px 3px;
-
+.button:hover{
+    border-bottom: white solid 1px;
 }
 
 body {

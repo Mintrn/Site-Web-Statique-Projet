@@ -1,42 +1,155 @@
+.EcuriesHeader {
+    display: flex;
+    position: relative;
+    height: 400px;
+    margin-top: 100px;
+    margin-left: 10vh;
+    height: 0;
+    width: auto;
+    flex-direction: column;
+}
+
+.EcuriesHeader p {
+    position: relative;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10vh;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.EcuriesHeader hr{
+    height: 3px;
+    color: black;
+    background-color: black;
+    width: 450px;
+}
+
 .Ecuries {
     position: relative;
     width: 100%;
     background-color: white;
-
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     gap: 50px;
-
-    margin-top: 4%;
+    margin-top: 8%;
     padding: 2% 5%;
     box-sizing: border-box;
 }
 
+/*Voiture Alpine*/
 .AlpineCar {
     display: flex;
     width: 100%;
     height: 300px;
-    background-color: #115080;
     border-radius: 15px;
+    flex-direction: column;
     background-image: linear-gradient(288deg, rgba(0, 85, 255, 1) 1.5%, rgba(4, 56, 115, 1) 91.6%);
 }
 
+.AlpineCarHeader {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    margin-left: 4%;
+}
+
+.AlpineCarHeader p {
+    margin-top: 0.5vh;
+}
+
+.AlpineCar img {
+    width: 48px;
+    height: 48px;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.AlpineCar img.A526 {
+    align-self: center;
+    width: 90%;
+    height: auto;
+    align-self: center;
+    margin-top: auto;
+    margin-right: 8%;
+}
+
+/*Voiture Aston Martin*/
 .AstonMartinCar {
     background-image: linear-gradient(288deg, rgba(15, 138, 99, 1) 1.5%, rgba(8, 72, 45, 1) 91.6%);
     display: flex;
     width: 100%;
     height: 300px;
     border-radius: 15px;
+    flex-direction: column;
 }
 
+.AstonMartinCarHeader {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    margin-left: 4%;
+}
+
+.AstonMartinCarHeader p {
+    margin-top: 0.5vh;
+}
+
+.AstonMartinCar img {
+    width: 48px;
+    height: 48px;
+    margin-top: 0%;
+    margin-left: 0%;
+}
+
+.AstonMartinCar img.AMR26 {
+    align-self: center;
+    width: 90%;
+    height: auto;
+    align-self: center;
+    margin-top: auto;
+    margin-right: 8%;
+}
+
+
+/*Voiture Audi*/
 .AudiCar {
     background-image: linear-gradient(288deg, rgba(247, 28, 75, 1) 1.5%, rgba(150, 12, 40, 1) 91.6%);
     display: flex;
     width: 100%;
     height: 300px;
     border-radius: 15px;
+    flex-direction: column;
 }
 
+.AudiCarHeader {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    margin-left: 4%;
+}
+
+.AudiCarHeader p {
+    margin-top: 0.5vh;
+}
+
+.AudiCar img {
+    width: 48px;
+    height: 48px;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.AudiCar img.R26 {
+    align-self: center;
+    width: 90%;
+    height: auto;
+    align-self: center;
+    margin-top: auto;
+    margin-right: 8%;
+}
+
+/*Voiture Cadillac*/
 .CadillacCar {
     background-image:
         linear-gradient(288deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0)),
@@ -45,22 +158,108 @@
     width: 100%;
     height: 300px;
     border-radius: 15px;
+    flex-direction: column;
 }
 
+.CadillacCarHeader {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    margin-left: 4%;
+}
+
+.CadillacCarHeader p {
+    margin-top: 0.5vh;
+}
+
+.CadillacCar img {
+    width: 48px;
+    height: 48px;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.CadillacCar img.Cadillac2026 {
+    align-self: center;
+    width: 90%;
+    height: auto;
+    align-self: center;
+    margin-top: auto;
+    margin-right: 8%;
+}
+
+/*Voiture Ferrari*/
 .FerrariCar {
     background-image: radial-gradient(circle farthest-corner at 17.1% 22.8%, rgba(226, 24, 24, 1) 0%, rgba(160, 6, 6, 1) 90%);
     display: flex;
     width: 100%;
     height: 300px;
     border-radius: 15px;
+    flex-direction: column;
 }
 
+.FerrariCarHeader {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    margin-left: 4%;
+}
+
+.FerrariCarHeader p {
+    margin-top: 0.5vh;
+}
+
+.FerrariCar img {
+    width: 48px;
+    height: 48px;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.FerrariCar img.SF26 {
+    align-self: center;
+    width: 90%;
+    height: auto;
+    align-self: center;
+    margin-top: auto;
+    margin-right: 8%;
+}
+
+/*Voiture Haas*/
 .HaasCar {
     background-image: linear-gradient(135deg, rgba(235, 10, 30, 1) 1.5%, rgba(0, 0, 0, 1) 91.6%);
     display: flex;
     width: 100%;
     height: 300px;
     border-radius: 15px;
+    flex-direction: column;
+}
+
+.HaasCarHeader {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    margin-left: 4%;
+}
+
+.HaasCarHeader p {
+    margin-top: 0.5vh;
+}
+
+.HaasCar img {
+    width: 48px;
+    height: 48px;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.HaasCar img.VF26 {
+    align-self: center;
+    width: 90%;
+    height: auto;
+    align-self: center;
+    margin-top: auto;
+    margin-right: 8%;
 }
 
 .MclarenCar {
@@ -69,40 +268,183 @@
     width: 100%;
     height: 300px;
     border-radius: 15px;
+    flex-direction: column;
 
 }
 
+.MclarenCarHeader {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    margin-left: 4%;
+}
+
+.MclarenCarHeader p {
+    margin-top: 0.5vh;
+}
+
+.MclarenCar img {
+    width: 48px;
+    height: 48px;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.MclarenCar img.MCL40 {
+    align-self: center;
+    width: 90%;
+    height: auto;
+    align-self: center;
+    margin-top: auto;
+    margin-right: 8%;
+}
+
+/*Voiture Mercedes*/
 .MercedesCar {
     background-image: linear-gradient(135deg, #00A19B 1.5%, #C8CCCE 91.6%);
     display: flex;
     width: 100%;
     height: 300px;
     border-radius: 15px;
-
+    flex-direction: column;
 }
 
+.MercedesCarHeader {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    margin-left: 4%;
+}
+
+.MercedesCarHeader p {
+    margin-top: 0.5vh;
+}
+
+.MercedesCar img {
+    width: 48px;
+    height: 48px;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.MercedesCar img.W17 {
+    align-self: center;
+    width: 90%;
+    height: auto;
+    align-self: center;
+    margin-top: auto;
+    margin-right: 8%;
+}
+
+/*Voiture Racing Bulls*/
 .RacingBullsCar {
     background-image: linear-gradient(165deg, #3143a9 35.5%, #dddddd 91.6%);
     display: flex;
     width: 100%;
     height: 300px;
     border-radius: 15px;
+    flex-direction: column;
 }
 
+.RacingBullsCarHeader {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    margin-left: 4%;
+}
+
+.RacingBullsCarHeader p {
+    margin-top: 0.5vh;
+}
+
+.RacingBullsCar img {
+    width: 48px;
+    height: 48px;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.RacingBullsCar img.VCARB03 {
+    align-self: center;
+    width: 90%;
+    height: auto;
+    align-self: center;
+    margin-top: auto;
+    margin-right: 8%;
+}
+
+/*Voiture RedBull*/
 .RedBullCar {
     background-image: linear-gradient(135deg, #00174C 1.5%, #003773 91.6%);
     display: flex;
     width: 100%;
     height: 300px;
     border-radius: 15px;
+    flex-direction: column;
 }
 
+.RedBullCar img {
+    width: 48px;
+    height: 48px;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.RedBullCarHeader {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    margin-left: 4%;
+}
+
+.RedBullCarHeader p {
+    margin-top: 0.5vh;
+}
+
+.RedBullCar img.RB22 {
+    align-self: center;
+    width: 90%;
+    height: auto;
+    align-self: center;
+    margin-top: auto;
+    margin-right: 8%;
+}
+
+/*Voiture Williams*/
 .WilliamsCar {
     background-image: linear-gradient(135deg, #00A3E0 1.5%, #041E42 91.6%);
     display: flex;
     width: 100%;
     height: 300px;
     border-radius: 15px;
+    flex-direction: column;
+}
+
+.WilliamsCarHeader {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    margin-left: 4%;
+}
+
+.WilliamsCarHeader p {
+    margin-top: 0.5vh;
+}
+
+.WilliamsCar img {
+    width: 48px;
+    height: 48px;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.WilliamsCar img.FW48 {
+    align-self: center;
+    width: 90%;
+    height: auto;
+    align-self: center;
+    margin-top: auto;
+    margin-right: 8%;
 }
 
 .Voiture p,
@@ -120,7 +462,8 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: xx-large;
     color: white;
-    margin-left: 5%;
+    margin-left: 2%;
+    font-weight: 100;
 }
 
 .AlpinePilote1,
@@ -130,8 +473,18 @@
     height: 300px;
     background-color: #115080;
     border-radius: 15px;
-    align-items: center;
     background-image: linear-gradient(288deg, rgba(0, 85, 255, 1) 1.5%, rgba(4, 56, 115, 1) 91.6%);
+    position: relative;
+    overflow: hidden;
+}
+
+
+.AlpinePilote1 img,
+.AlpinePilote2 img {
+    position: absolute;
+    bottom: -77vh;
+    right: 0;
+    width: 35vh;
 }
 
 .AstonMartinPilote1,
@@ -142,7 +495,16 @@
     height: 300px;
     background-color: #115080;
     border-radius: 15px;
-    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.AstonMartinPilote1 img,
+.AstonMartinPilote2 img {
+    position: absolute;
+    bottom: -80vh;
+    right: 0;
+    width: 35vh;
 }
 
 .AudiPilote1,
@@ -153,7 +515,16 @@
     height: 300px;
     background-color: #115080;
     border-radius: 15px;
-    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.AudiPilote1 img,
+.AudiPilote2 img {
+    position: absolute;
+    bottom: -80vh;
+    right: 0;
+    width: 35vh;
 }
 
 .CadillacPilote1,
@@ -165,7 +536,16 @@
     width: 100%;
     height: 300px;
     border-radius: 15px;
-    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.CadillacPilote1 img,
+.CadillacPilote2 img {
+    position: absolute;
+    bottom: -80vh;
+    right: 0;
+    width: 35vh;
 }
 
 .FerrariPilote1,
@@ -175,8 +555,18 @@
     width: 100%;
     height: 300px;
     border-radius: 15px;
-    align-items: center;
+    position: relative;
+    overflow: hidden;
 }
+
+.FerrariPilote1 img,
+.FerrariPilote2 img {
+    position: absolute;
+    bottom: -80vh;
+    right: 0;
+    width: 35vh;
+}
+
 
 .HaasPilote1,
 .HaasPilote2 {
@@ -185,6 +575,16 @@
     width: 100%;
     height: 300px;
     border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.HaasPilote1 img,
+.HaasPilote2 img {
+    position: absolute;
+    bottom: -80vh;
+    right: 0;
+    width: 35vh;
 }
 
 .MclarenPilote1,
@@ -194,6 +594,16 @@
     width: 100%;
     height: 300px;
     border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.MclarenPilote1 img,
+.MclarenPilote2 img {
+    position: absolute;
+    bottom: -80vh;
+    right: 0;
+    width: 35vh;
 }
 
 .MercedesPilote1,
@@ -203,6 +613,16 @@
     width: 100%;
     height: 300px;
     border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.MercedesPilote1 img,
+.MercedesPilote2 img {
+    position: absolute;
+    bottom: -80vh;
+    right: 0;
+    width: 35vh;
 }
 
 .RacingBullsPilote1,
@@ -212,6 +632,16 @@
     width: 100%;
     height: 300px;
     border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.RacingBullsPilote1 img,
+.RacingBullsPilote2 img {
+    position: absolute;
+    bottom: -80vh;
+    right: 0;
+    width: 35vh;
 }
 
 .RedBullPilote1,
@@ -221,6 +651,16 @@
     width: 100%;
     height: 300px;
     border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.RedBullPilote1 img,
+.RedBullPilote2 img {
+    position: absolute;
+    bottom: -80vh;
+    right: 0;
+    width: 35vh;
 }
 
 .WilliamsPilote1,
@@ -230,6 +670,16 @@
     width: 100%;
     height: 300px;
     border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.WilliamsPilote1 img,
+.WilliamsPilote2 img {
+    position: absolute;
+    bottom: -80vh;
+    right: 0;
+    width: 35vh;
 }
 
 .Pilote1 p,
@@ -253,10 +703,13 @@
 .RacingBullsPilote1 p,
 .RacingBullsPilote2 p,
 .RedBullPilote1 p,
-.RedBullPilote2 p, .WilliamsPilote1 p, .WilliamsPilote2 p {
+.RedBullPilote2 p,
+.WilliamsPilote1 p,
+.WilliamsPilote2 p {
     align-self: flex-start;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-size: large;
     margin-left: 5%;
+    font-weight: 100;
 }
