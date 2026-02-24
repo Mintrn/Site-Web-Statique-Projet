@@ -1,16 +1,49 @@
+.CalendrierHeader {
+    display: flex;
+    position: relative;
+    margin-left: 0;
+    margin-top: 100px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.CalendrierHeader p {
+    position: relative;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10vh;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.CalendrierHeader hr {
+    height: 3px;
+    background-color: white;
+    width: 500px;
+    margin-top: 0;
+    position: relative;
+    align-self: flex-start;
+    border: none;
+    margin-left: 0;
+}
+
+
+
 .Calendrier {
     position: relative;
     width: 100%;
-    background-color: whitesmoke;
+    background: #cc0000;
+    background: linear-gradient(135deg, rgba(204, 0, 0, 1) 0%, rgba(66, 34, 34, 1) 50%, rgba(0, 0, 0, 1) 100%);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 50px;
-    margin-top: 2%;
+    margin-top: -40px;
     padding: 2% 5%;
     box-sizing: border-box;
 }
 
-.Course1 {
+.Course {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     width: 100%;
@@ -19,31 +52,36 @@
     position: relative;
     background-color: white;
     flex-direction: column;
-
+    box-sizing: border-box;
 }
 
-.Course1 p{
+.Course p {
     margin-bottom: 0;
     margin-left: 1vh;
 }
 
-.Localite{
+.Localite {
     font-weight: bold;
     font-size: xx-large;
-    margin: 0;
+    margin-top: 1px;
 }
 
-.Dates{
+.NomGP {
+    margin-top: 0.5%;
+    font-weight: 700;
+}
+
+.Dates {
     font-weight: bold;
     font-size: larger;
     margin-top: 30%;
     margin-left: 1vh;
 }
 
-.Course1 img{
+.Course img {
     position: absolute;
     width: 20%;
     bottom: 1vh;
     right: 1vh;
-    
+    max-width: 100px;
 }
