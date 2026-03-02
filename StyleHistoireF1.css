@@ -1,0 +1,16 @@
+    .ListeChampions {
+        background-color: white;
+        position: relative;
+        width: 100%;
+        display: grid;
+        gap: 50px;
+        margin-top: -40px;
+        padding: 2% 5%;
+        box-sizing: border-box;
+    }
+
+    .Champion{
+        border: black solid;
+        border-radius: 5%;
+        flex-direction: row;
+    }
