@@ -470,6 +470,14 @@
     font-weight: 100;
 }
 
+.Numero {
+    position: absolute;
+    left: 4vh;
+    top: 8vh;
+    width: 8vh;
+    max-height: 200px;
+}
+
 .AlpinePilote1,
 .AlpinePilote2 {
     display: flex;
@@ -486,8 +494,8 @@
 .AlpinePilote1 img,
 .AlpinePilote2 img {
     position: absolute;
-    bottom: -77vh;
-    right: 0;
+    bottom: -72vh;
+    right: 2vw;
     width: 35vh;
 }
 
@@ -506,8 +514,8 @@
 .AstonMartinPilote1 img,
 .AstonMartinPilote2 img {
     position: absolute;
-    bottom: -80vh;
-    right: 0;
+    bottom: -72vh;
+    right: 2vw;
     width: 35vh;
 }
 
@@ -526,8 +534,8 @@
 .AudiPilote1 img,
 .AudiPilote2 img {
     position: absolute;
-    bottom: -80vh;
-    right: 0;
+    bottom: -72vh;
+    right: 2vw;
     width: 35vh;
 }
 
@@ -547,8 +555,8 @@
 .CadillacPilote1 img,
 .CadillacPilote2 img {
     position: absolute;
-    bottom: -80vh;
-    right: 0;
+    bottom: -72vh;
+    right: 2vw;
     width: 35vh;
 }
 
@@ -566,8 +574,8 @@
 .FerrariPilote1 img,
 .FerrariPilote2 img {
     position: absolute;
-    bottom: -80vh;
-    right: 0;
+    bottom: -72vh;
+    right: 2vw;
     width: 35vh;
 }
 
@@ -586,8 +594,8 @@
 .HaasPilote1 img,
 .HaasPilote2 img {
     position: absolute;
-    bottom: -80vh;
-    right: 0;
+    bottom: -72vh;
+    right: 2vw;
     width: 35vh;
 }
 
@@ -605,8 +613,8 @@
 .MclarenPilote1 img,
 .MclarenPilote2 img {
     position: absolute;
-    bottom: -80vh;
-    right: 0;
+    bottom: -72vh;
+    right: 2vw;
     width: 35vh;
 }
 
@@ -624,8 +632,8 @@
 .MercedesPilote1 img,
 .MercedesPilote2 img {
     position: absolute;
-    bottom: -80vh;
-    right: 0;
+    bottom: -72vh;
+    right: 2vw;
     width: 35vh;
 }
 
@@ -643,8 +651,8 @@
 .RacingBullsPilote1 img,
 .RacingBullsPilote2 img {
     position: absolute;
-    bottom: -80vh;
-    right: 0;
+    bottom: -72vh;
+    right: 2vw;
     width: 35vh;
 }
 
@@ -662,8 +670,8 @@
 .RedBullPilote1 img,
 .RedBullPilote2 img {
     position: absolute;
-    bottom: -80vh;
-    right: 0;
+    bottom: -72vh;
+    right: 2vw;
     width: 35vh;
 }
 
@@ -681,8 +689,8 @@
 .WilliamsPilote1 img,
 .WilliamsPilote2 img {
     position: absolute;
-    bottom: -80vh;
-    right: 0;
+    bottom: -72vh;
+    right: 2vw;
     width: 35vh;
 }
 
