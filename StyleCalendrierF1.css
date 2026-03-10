@@ -1,8 +1,14 @@
+.CalendrierBackground {
+    width: 100%;
+    background: linear-gradient(135deg, rgba(204, 0, 0, 1) 0%, rgba(66, 34, 34, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    background-attachment: fixed;
+}
+
 .CalendrierHeader {
     display: flex;
     position: relative;
     margin-left: 0;
-    margin-top: 100px;
+    padding-top: 100px;
     width: 100%;
     flex-direction: column;
 }
@@ -11,32 +17,30 @@
     position: relative;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 10vh;
+    font-size: 10vw;
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 10px;
+    padding-left: 5%;
 }
 
 .CalendrierHeader hr {
     height: 3px;
     background-color: white;
-    width: 500px;
+    width: 50vw;
     margin-top: 0;
     position: relative;
     align-self: flex-start;
     border: none;
-    margin-left: 0;
+    margin-left: 5%;
 }
 
 .Calendrier {
     position: relative;
     width: 100%;
-    background: #cc0000;
-    background: linear-gradient(135deg, rgba(204, 0, 0, 1) 0%, rgba(66, 34, 34, 1) 50%, rgba(0, 0, 0, 1) 100%);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 50px;
-    margin-top: -40px;
     padding: 2% 5%;
     box-sizing: border-box;
 }
@@ -83,3 +87,22 @@
     right: 1vh;
     max-width: 100px;
 }
+
+@media (max-width: 600px)  {
+    .CalendrierHeader {
+        padding-top: 70px;
+    }
+
+    .CalendrierHeader p {
+        font-size: 5vh;
+    }
+
+    .CalendrierHeader hr {
+        width: 200px;
+    }
+
+    .Calendrier {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 3% 4%;
+    }}

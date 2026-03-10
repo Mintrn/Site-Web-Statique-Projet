@@ -73,7 +73,6 @@
     align-self: center;
     width: 90%;
     height: auto;
-    align-self: center;
     margin-top: auto;
     margin-right: 8%;
 }
@@ -110,7 +109,6 @@
     align-self: center;
     width: 90%;
     height: auto;
-    align-self: center;
     margin-top: auto;
     margin-right: 8%;
 }
@@ -148,7 +146,6 @@
     align-self: center;
     width: 90%;
     height: auto;
-    align-self: center;
     margin-top: auto;
     margin-right: 8%;
 }
@@ -187,7 +184,6 @@
     align-self: center;
     width: 90%;
     height: auto;
-    align-self: center;
     margin-top: auto;
     margin-right: 8%;
 }
@@ -224,7 +220,6 @@
     align-self: center;
     width: 90%;
     height: auto;
-    align-self: center;
     margin-top: auto;
     margin-right: 8%;
 }
@@ -261,9 +256,9 @@
     align-self: center;
     width: 90%;
     height: auto;
-    align-self: center;
     margin-top: auto;
     margin-right: 8%;
+    margin-bottom: -8px;
 }
 
 .MclarenCar {
@@ -298,7 +293,6 @@
     align-self: center;
     width: 90%;
     height: auto;
-    align-self: center;
     margin-top: auto;
     margin-right: 8%;
 }
@@ -335,7 +329,6 @@
     align-self: center;
     width: 90%;
     height: auto;
-    align-self: center;
     margin-top: auto;
     margin-right: 8%;
 }
@@ -372,7 +365,6 @@
     align-self: center;
     width: 90%;
     height: auto;
-    align-self: center;
     margin-top: auto;
     margin-right: 8%;
 }
@@ -409,7 +401,6 @@
     align-self: center;
     width: 90%;
     height: auto;
-    align-self: center;
     margin-top: auto;
     margin-right: 8%;
 }
@@ -446,7 +437,6 @@
     align-self: center;
     width: 90%;
     height: auto;
-    align-self: center;
     margin-top: auto;
     margin-right: 8%;
 }
@@ -471,14 +461,14 @@
 }
 
 .Numero {
-    position: absolute;
-    left: 4vh;
-    top: 8vh;
-    max-height: 200px;
+    position: fixed;
+    top: 10px;
+    right: 10px !important; 
+    width: 50px !important;
 }
 
-.AlpinePilote1,
-.AlpinePilote2 {
+
+.AlpinePilote {
     display: flex;
     width: 100%;
     height: 300px;
@@ -490,16 +480,16 @@
 }
 
 
-.AlpinePilote1 img,
-.AlpinePilote2 img {
+
+.AlpinePilote img {
     position: absolute;
     bottom: -72vh;
     right: 2vw;
     width: 35vh;
 }
 
-.AstonMartinPilote1,
-.AstonMartinPilote2 {
+
+.AstonMartinPilote {
     background-image: linear-gradient(288deg, rgba(15, 138, 99, 1) 1.5%, rgba(8, 72, 45, 1) 91.6%);
     display: flex;
     width: 100%;
@@ -510,16 +500,16 @@
     overflow: hidden;
 }
 
-.AstonMartinPilote1 img,
-.AstonMartinPilote2 img {
+
+.AstonMartinPilote img {
     position: absolute;
     bottom: -72vh;
     right: 2vw;
     width: 35vh;
 }
 
-.AudiPilote1,
-.AudiPilote2 {
+
+.AudiPilote {
     background-image: linear-gradient(288deg, rgba(247, 28, 75, 1) 1.5%, rgba(150, 12, 40, 1) 91.6%);
     display: flex;
     width: 100%;
@@ -530,16 +520,16 @@
     overflow: hidden;
 }
 
-.AudiPilote1 img,
-.AudiPilote2 img {
+
+.AudiPilote img {
     position: absolute;
     bottom: -72vh;
     right: 2vw;
     width: 35vh;
 }
 
-.CadillacPilote1,
-.CadillacPilote2 {
+
+.CadillacPilote {
     background-image:
         linear-gradient(288deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0)),
         linear-gradient(288deg, rgba(60, 60, 60, 1) 1.5%, rgba(8, 8, 10, 1) 91.6%);
@@ -551,16 +541,16 @@
     overflow: hidden;
 }
 
-.CadillacPilote1 img,
-.CadillacPilote2 img {
+
+.CadillacPilote img {
     position: absolute;
     bottom: -72vh;
     right: 2vw;
     width: 35vh;
 }
 
-.FerrariPilote1,
-.FerrariPilote2 {
+
+.FerrariPilote {
     background-image: radial-gradient(circle farthest-corner at 17.1% 22.8%, rgba(226, 24, 24, 1) 0%, rgba(160, 6, 6, 1) 90%);
     display: flex;
     width: 100%;
@@ -570,8 +560,8 @@
     overflow: hidden;
 }
 
-.FerrariPilote1 img,
-.FerrariPilote2 img {
+
+.FerrariPilote img {
     position: absolute;
     bottom: -72vh;
     right: 2vw;
@@ -579,8 +569,8 @@
 }
 
 
-.HaasPilote1,
-.HaasPilote2 {
+
+.HaasPilote {
     background-image: linear-gradient(135deg, rgba(235, 10, 30, 1) 1.5%, rgba(0, 0, 0, 1) 91.6%);
     display: flex;
     width: 100%;
@@ -590,16 +580,16 @@
     overflow: hidden;
 }
 
-.HaasPilote1 img,
-.HaasPilote2 img {
+
+.HaasPilote img {
     position: absolute;
     bottom: -72vh;
     right: 2vw;
     width: 35vh;
 }
 
-.MclarenPilote1,
-.MclarenPilote2 {
+
+.MclarenPilote {
     background-image: linear-gradient(135deg, #FF8000 1.5%, #000000 91.6%);
     display: flex;
     width: 100%;
@@ -609,16 +599,16 @@
     overflow: hidden;
 }
 
-.MclarenPilote1 img,
-.MclarenPilote2 img {
+
+.MclarenPilote img {
     position: absolute;
     bottom: -72vh;
     right: 2vw;
     width: 35vh;
 }
 
-.MercedesPilote1,
-.MercedesPilote2 {
+
+.MercedesPilote {
     background-image: linear-gradient(135deg, #00A19B 1.5%, #C8CCCE 91.6%);
     display: flex;
     width: 100%;
@@ -628,16 +618,16 @@
     overflow: hidden;
 }
 
-.MercedesPilote1 img,
-.MercedesPilote2 img {
+
+.MercedesPilote img {
     position: absolute;
     bottom: -72vh;
     right: 2vw;
     width: 35vh;
 }
 
-.RacingBullsPilote1,
-.RacingBullsPilote2 {
+
+.RacingBullsPilote {
     background-image: linear-gradient(165deg, #3143a9 35.5%, #dddddd 91.6%);
     display: flex;
     width: 100%;
@@ -647,16 +637,15 @@
     overflow: hidden;
 }
 
-.RacingBullsPilote1 img,
-.RacingBullsPilote2 img {
+.RacingBullsPilote img {
     position: absolute;
     bottom: -72vh;
     right: 2vw;
     width: 35vh;
 }
 
-.RedBullPilote1,
-.RedBullPilote2 {
+
+.RedBullPilote {
     background-image: linear-gradient(135deg, #00174C 16%, #003773 80.6%);
     display: flex;
     width: 100%;
@@ -666,16 +655,16 @@
     overflow: hidden;
 }
 
-.RedBullPilote1 img,
-.RedBullPilote2 img {
+
+.RedBullPilote img {
     position: absolute;
     bottom: -72vh;
     right: 2vw;
     width: 35vh;
 }
 
-.WilliamsPilote1,
-.WilliamsPilote2 {
+
+.WilliamsPilote {
     background-image: linear-gradient(135deg, #00A3E0 1.5%, #041E42 91.6%);
     display: flex;
     width: 100%;
@@ -685,38 +674,24 @@
     overflow: hidden;
 }
 
-.WilliamsPilote1 img,
-.WilliamsPilote2 img {
+.WilliamsPilote img {
     position: absolute;
     bottom: -72vh;
     right: 2vw;
     width: 35vh;
 }
 
-.Pilote1 p,
-.Pilote2 p,
-.AlpinePilote1 p,
-.AlpinePilote2 p,
-.AstonMartinPilote1 p,
-.AstonMartinPilote2 p,
-.AudiPilote1 p,
-.AudiPilote2 p,
-.CadillacPilote1 p,
-.CadillacPilote2 p,
-.FerrariPilote1 p,
-.FerrariPilote2 p,
-.HaasPilote1 p,
-.HaasPilote2 p,
-.MclarenPilote1 p,
-.MclarenPilote2 p,
-.MercedesPilote1 p,
-.MercedesPilote2 p,
-.RacingBullsPilote1 p,
-.RacingBullsPilote2 p,
-.RedBullPilote1 p,
-.RedBullPilote2 p,
-.WilliamsPilote1 p,
-.WilliamsPilote2 p {
+.AlpinePilote p,
+.AstonMartinPilote p,
+.AudiPilote p,
+.CadillacPilote p,
+.FerrariPilote p,
+.HaasPilote p,
+.MclarenPilote p,
+.MercedesPilote p,
+.RacingBullsPilote p,
+.RedBullPilote p,
+.WilliamsPilote p {
     align-self: flex-start;
     font-family: Arial, Helvetica, sans-serif;
     color: white;

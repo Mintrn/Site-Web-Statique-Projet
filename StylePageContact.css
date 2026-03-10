@@ -1,73 +1,164 @@
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .ContactHeader {
     display: flex;
     position: relative;
-    margin-top: 100px;
-    margin-left: 10vh;
+    margin-top: 80px;
+    margin-left: 10vw;
     width: auto;
     flex-direction: column;
 }
 
 .ContactHeader p {
-    position: relative;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 10vh;
+    font-size: clamp(40px, 8vw, 100px);
     font-weight: bold;
-    margin-top: 0;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
 }
 
 .ContactHeader hr {
     height: 3px;
     background-color: black;
-    width: 450px;
-    margin-top: 0;
-    position: relative;
-    align-self: flex-start;
+    width: clamp(150px, 40vw, 500px);
+    margin: 0;
     border: none;
-    margin-left: 0;
 }
 
+/* ── PRÉSENTATION ── */
+.Presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px 10px;
+}
+
+.Presentation h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+/* ── FORMULAIRE ── */
 .ContactForm {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 20px 60px;
+}
+
+.ContactForm > p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 15px;
 }
 
 .ContactForm form {
-    width: 80%;
-    max-width: 600px;
+    width: min(80vw, 700px);
 }
 
 .ContactForm fieldset {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    gap: 14px;
     border: 2px solid black;
     border-radius: 8px;
-    padding: 20px;
+    padding: 24px;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 10px;
-    margin-bottom: 80px;
+    box-sizing: border-box;
+    width: 100%;
 }
+
 .LogoF1 {
     max-width: 80px;
 }
 
-input[type="text"]{
-    padding: 6px;
+/* Grille 2 colonnes pour les champs */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group label {
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    padding: 8px;
     border: 1px solid black;
     border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-input[type="submit"]{
+input[type="submit"] {
     background-color: black;
     color: white;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 4px;
+    align-self: flex-start;
 }
 
-textarea{
+input[type="submit"]:hover {
+    background-color: #333;
+}
+
+textarea {
+    width: 100%;
+    min-height: 120px;
     resize: vertical;
     border-radius: 4px;
     border: 1px solid black;
+    padding: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ── MOBILE ── */
+@media (max-width: 600px) {
+    .ContactHeader {
+        margin-top: 70px;
+        margin-left: 16px;
+    }
+
+    .ContactForm form {
+        width: 100%;
+    }
+
+    .ContactForm fieldset {
+        padding: 16px;
+    }
+
+    /* Passe en colonne unique sur mobile */
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
 }
