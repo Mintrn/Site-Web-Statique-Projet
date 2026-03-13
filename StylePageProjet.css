@@ -28,8 +28,34 @@ a:visited:active {
     cursor: pointer;
 }
 
-.button:hover{
+.button:hover {
     border-bottom: white solid 1px;
+}
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 6px;
+    margin-right: 10px;
+}
+
+.hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
 }
 
 body {
@@ -62,7 +88,6 @@ body {
     width: 100%;
     object-fit: cover;
 }
-
 
 .ombreVideo {
     top: 0;
@@ -123,7 +148,6 @@ body {
     display: flex;
     position: relative;
     color: white;
-
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -170,4 +194,75 @@ body {
 
 .sponsorsF1Part3 a {
     padding: 2% 2%;
+}
+
+
+@media (max-width: 600px) {
+
+
+    header {
+        justify-content: space-between;
+        padding: 0 16px;
+        height: 55px;
+    }
+
+    .Logo {
+        width: 80px !important;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 55px;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        z-index: 998;
+        padding: 10px 0;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links .button {
+        width: 100%;
+        text-align: center;
+        padding: 14px 0;
+        border-bottom: 1px solid #333;
+    }
+
+    .nav-links .button:hover {
+        border-bottom: 1px solid white;
+    }
+
+    .Actualités {
+        left: 20px;
+        bottom: 40px;
+    }
+
+    .Actualités p {
+        font-size: 32px;
+    }
+
+    .Actualités hr {
+        width: 180px;
+    }
+
+    .sponsorsF1 a img,
+    .sponsorsF1Part2 a img,
+    .sponsorsF1Part3 a img {
+        width: 55px !important;
+        height: auto !important;
+    }
+
+    .sponsorsF1 p {
+        font-size: large;
+        padding: 14px 5%;
+    }
 }

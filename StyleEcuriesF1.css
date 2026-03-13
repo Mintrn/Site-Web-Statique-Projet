@@ -699,3 +699,23 @@
     margin-left: 5%;
     font-weight: 100;
 }
+@media (max-width: 900px) {
+    .EcuriesHeader {
+        margin-top: 70px;
+        margin-left: 4vw;
+    }
+
+    .EcuriesHeader p {
+        font-size: 5vh;
+    }
+
+    .EcuriesHeader hr {
+        width: 200px;
+    }
+
+    .Ecuries {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 3% 4%;
+    }
+}
